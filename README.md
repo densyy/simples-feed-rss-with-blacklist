@@ -1,6 +1,6 @@
 # Simple Feed RSS With Blacklist
 
-Esse projeto é um prototipo de um leitor RSS
+Esse projeto é um prototipo de um leitor RSS.
 Com esse protótipo você será capaz de ler notícias através de um arquivo xml.
 Será possível também remover notícias que não interessam ao usuário interagindo com a lista de palavras: BlackList.
 A BlackList é um filtro que oculta qualquer notícia relacionada às palavras da lista. Assim você não perde tempo lendo notícias inúteis.
