@@ -1,0 +1,92 @@
+/********
+|  ALL  |
+********/
+
+* { box-sizing: border-box; }
+
+/*********
+|  LIST  |
+*********/
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid #DDDDDD;
+  padding: 20px;  
+}
+
+/**********
+|  INPUT  |
+**********/
+
+input {
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  padding: 10px 20px;
+}
+
+/**********
+|  IMAGE  |
+**********/
+
+img { width: 100%; }
+
+/**************
+|  BLACKLIST  |
+**************/
+
+section.blacklist { margin: 10px; }
+
+section.blacklist span.icone_deletar {
+  margin-right: 2px;
+  padding: 5px 8px;
+
+  border-radius: 25%;
+  
+  color: red;
+  background-color: #DDDDDD;
+  
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/************************
+|  GALERIA DE NOTICIAS  |
+************************/
+
+section.noticia_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+section.noticia_gallery .noticia {
+  width: calc( (100% / 3) - 20px );
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #CCCCCC;
+}
+
+section.noticia_gallery .noticia .noticia__titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/****************
+|  MEDIA QUERY  |
+****************/
+
+/* Tablet */
+@media (max-width: 900px) {
+  section.noticia_gallery .noticia { width: calc( (100% / 2) - 20px ); }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  section.noticia_gallery .noticia { width: calc( (100%) - 20px ); }
+}
